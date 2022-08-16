@@ -40,20 +40,18 @@ int main()
 	}
 	else if (cmd == 2)
 	{
-		std::vector<std::string> inputArray;
-		std::string input, ans = "";
-		char m;
+		std::string input = "", ans = "";
+		char m = '\0';
 		std::cout << "ÇëÊäÈë£º";
 		while (std::cin >> input)
 		{
 			std::cout << "ÇëÊäÈë£º";
 			if (isalnum(input[0]))
 			{
-				inputArray.emplace_back(input);
 				m = link.decipher(input);
+				ans.insert(ans.length(), 1, m);
 			}
 		}
-		ans.insert(ans.length(), 1, m);
 		std::cout << ans << std::endl;
 	}
 	else
