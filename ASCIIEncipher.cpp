@@ -8,7 +8,7 @@
 #define ASCII_HEADERS_ASCIIENCIPHER_H_
 #endif // !ASCII_HEADERS_ASCIIENCIPHER_H_
 
-std::string ASCIIEncipher::change(int n, int d)
+std::string change(int n, int d)
 {
 	std::stringstream ss;
 	std::string str = "", m = "";
@@ -28,7 +28,7 @@ std::string ASCIIEncipher::change(int n, int d)
 	return str;
 }
 
-std::vector<std::string> ASCIIEncipher::encipher(std::string str)
+std::vector<std::string> encipher(std::string str)
 {
 	std::vector<std::string> _strList;
 	for (int i = 0; i < str.length(); i++)
@@ -40,7 +40,7 @@ std::vector<std::string> ASCIIEncipher::encipher(std::string str)
 	return _strList;
 }
 
-char ASCIIEncipher::decipher(std::string str)
+char decipher(std::string str)
 {
 	int ans = 0, k = 0;
 	for (int i = str.length() - 1; i >= 0; i--)
@@ -54,7 +54,7 @@ char ASCIIEncipher::decipher(std::string str)
 	return ans;
 }
 
-inline int ASCIIEncipher::fac(int n, int k)
+inline int fac(int n, int k)
 {
 	if (k == 0) return 1;
 	return n * fac(n, k - 1);

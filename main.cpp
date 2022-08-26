@@ -20,7 +20,6 @@
 
 int main()
 {
-	ASCIIEncipher link = ASCIIEncipher();
 	std::cout << "欢迎进入ASCII加密系统\n";
 	std::cout << "加密请输入1，解密请输入2：";
 	int cmd;
@@ -30,7 +29,7 @@ int main()
 		std::cout << "请输入要加密的字符串：";
 		std::string input;
 		std::cin >> input;
-		std::vector<std::string> ans = link.encipher(input);
+		std::vector<std::string> ans = encipher(input);
 		std::vector<std::string>::iterator it = ans.begin();
 		while (it != ans.end())
 		{
@@ -48,7 +47,7 @@ int main()
 			std::cout << "请输入：";
 			if (isalnum(input[0]))
 			{
-				m = link.decipher(input);
+				m = decipher(input);
 				ans.insert(ans.length(), 1, m);
 			}
 		}
