@@ -1,6 +1,6 @@
 /*
-* ÎÄ¼şÃû£ºASCIIEncipher.h
-* ×÷Õß£ºÁõ×÷å«
+* æ–‡ä»¶åï¼šASCIIEncipher.h
+* ä½œè€…ï¼šåˆ˜ä½œç€š
 */
 
 #pragma once
@@ -24,38 +24,38 @@ class ASCIIEncipher
 {
 public:
 	/*
-	* @brief ½«10½øÖÆÊı×ª»»³Éd½øÖÆÊı
+	* @brief å°†10è¿›åˆ¶æ•°è½¬æ¢æˆdè¿›åˆ¶æ•°
 	*
 	* @param {int} n
 	* @paran {int} d
 	*
-	* @return 10½øÖÆÊınµÄd½øÖÆ
+	* @return 10è¿›åˆ¶æ•°nçš„dè¿›åˆ¶
 	*/
 	std::string change(int n, int d);
 
 	/*
-	* @brief ¼ÓÃÜÒ»¸ö×Ö·û´®
+	* @brief åŠ å¯†ä¸€ä¸ªå­—ç¬¦ä¸²
 	*
-	* @param {std::string} str - Òª¼ÓÃÜµÄ×Ö·û´®
-	* @return {std::vector<std::string>} - ¼ÓÃÜºóµÄ×Ö·û´®
+	* @param {std::string} str - è¦åŠ å¯†çš„å­—ç¬¦ä¸²
+	* @return {std::vector<std::string>} - åŠ å¯†åçš„å­—ç¬¦ä¸²
 	*/
 	std::vector<std::string> encipher(std::string str);
 
 	/*
-	* @brief ½âÃÜÒ»¸ö×Ö·û´®
+	* @brief è§£å¯†ä¸€ä¸ªå­—ç¬¦ä¸²
 	*
-	* @param {std::string} str - Òª½âÃÜµÄ×Ö·û´®
-	* @return {char} - ½âÃÜºóµÄ×Ö·û
+	* @param {std::string} str - è¦è§£å¯†çš„å­—ç¬¦ä¸²
+	* @return {char} - è§£å¯†åçš„å­—ç¬¦
 	*/
 	char decipher(std::string str);
 private:
 	/*
-	* @brief ¼ÆËãnµÄk´Î·½²¢·µ»Ø
+	* @brief è®¡ç®—nçš„kæ¬¡æ–¹å¹¶è¿”å›
 	*
 	* @param {int} n
 	* @param {int} k
 	*
-	* @return {int} - nµÄk´Î·½
+	* @return {int} - nçš„kæ¬¡æ–¹
 	*/
 	int fac(int n, int k);
 };

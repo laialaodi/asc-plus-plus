@@ -1,6 +1,6 @@
 /*
-* ÎÄ¼þÃû£ºASCIIEncipher.cpp
-* ×÷Õß£ºÁõ×÷å«
+* æ–‡ä»¶åï¼šASCIIEncipher.cpp
+* ä½œè€…ï¼šåˆ˜ä½œç€š
 */
 
 #ifndef ASCII_HEADERS_ASCIIENCIPHER_H_

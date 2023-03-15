@@ -1,6 +1,6 @@
 /*
-* ÎÄ¼şÃû£ºmain.cpp
-* ×÷Õß£ºÁõ×÷å«
+* æ–‡ä»¶åï¼šmain.cpp
+* ä½œè€…ï¼šåˆ˜ä½œç€š
 */
 
 #ifndef ASCII_STD_IOSTREAM_
@@ -21,13 +21,13 @@
 int main()
 {
 	ASCIIEncipher link = ASCIIEncipher();
-	std::cout << "»¶Ó­½øÈëASCII¼ÓÃÜÏµÍ³\n";
-	std::cout << "¼ÓÃÜÇëÊäÈë1£¬½âÃÜÇëÊäÈë2£º";
+	std::cout << "æ¬¢è¿è¿›å…¥ASCIIåŠ å¯†ç³»ç»Ÿ\n";
+	std::cout << "åŠ å¯†è¯·è¾“å…¥1ï¼Œè§£å¯†è¯·è¾“å…¥2ï¼š";
 	int cmd;
 	std::cin >> cmd;
 	if (cmd == 1)
 	{
-		std::cout << "ÇëÊäÈëÒª¼ÓÃÜµÄ×Ö·û´®£º";
+		std::cout << "è¯·è¾“å…¥è¦åŠ å¯†çš„å­—ç¬¦ä¸²ï¼š";
 		std::string input;
 		std::cin >> input;
 		std::vector<std::string> ans = link.encipher(input);
@@ -42,10 +42,10 @@ int main()
 	{
 		std::string input = "", ans = "";
 		char m = '\0';
-		std::cout << "ÇëÊäÈë£º";
+		std::cout << "è¯·è¾“å…¥ï¼š";
 		while (std::cin >> input)
 		{
-			std::cout << "ÇëÊäÈë£º";
+			std::cout << "è¯·è¾“å…¥ï¼š";
 			if (isalnum(input[0]))
 			{
 				m = link.decipher(input);
@@ -56,7 +56,7 @@ int main()
 	}
 	else
 	{
-		std::cerr << "ÎŞĞ§µÄÃüÁî£¡\n";
+		std::cerr << "æ— æ•ˆçš„å‘½ä»¤ï¼\n";
 	}
 	system("pause");
 	return 0;
