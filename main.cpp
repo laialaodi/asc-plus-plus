@@ -3,20 +3,10 @@
 * 作者：刘作瀚
 */
 
-#ifndef ASCII_STD_IOSTREAM_
 #include <iostream>
-#define ASCII_STD_IOSTREAM_
-#endif // !ASCII_STD_IOSTREAM_
-
-#ifndef ASCII_STD_CSTDLIB_
 #include <cstdlib>
-#define ASCII_STD_CSTDLIB_
-#endif // !ASCII_STD_CSTDLIB_
 
-#ifndef ASCII_HEADERS_ENCIPHER_H_
 #include "ASCIIEncipher.h"
-#define ASCII_HEADERS_ENCIPHER_H_
-#endif // !ASCII_HEADERS_ENCIPHER_H_
 
 int main()
 {

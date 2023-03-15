@@ -3,22 +3,14 @@
 * 作者：刘作瀚
 */
 
+#ifndef ASCIIENCIPHER_H_
+
+#define ASCIIENCIPHER_H_
+
 #pragma once
 
-#ifndef ASCII_HEADERS_STRING_
 #include <string>
-#define ASCII_HEADERS_STRING_
-#endif // !ASCII_HEADERS_STRING_
-
-#ifndef ASCII_HEADERS_SSTREAM_
-#include <sstream>
-#define ASCII_HEADERS_SSTREAM_
-#endif // !ASCII_HEADERS_SSTREAM_
-
-#ifndef ASCII_HEADERS_VECTOR
 #include <vector>
-#define ASCII_HEADERS_VECTOR
-#endif // !ASCII_HEADERS_VECTOR
 
 class ASCIIEncipher
 {
@@ -27,7 +19,7 @@ public:
 	* @brief 将10进制数转换成d进制数
 	*
 	* @param {int} n
-	* @paran {int} d
+	* @param {int} d
 	*
 	* @return 10进制数n的d进制
 	*/
@@ -59,3 +51,5 @@ private:
 	*/
 	int fac(int n, int k);
 };
+
+#endif

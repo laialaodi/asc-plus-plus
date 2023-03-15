@@ -3,10 +3,9 @@
 * 作者：刘作瀚
 */
 
-#ifndef ASCII_HEADERS_ASCIIENCIPHER_H_
+#include <sstream>
+
 #include "ASCIIEncipher.h"
-#define ASCII_HEADERS_ASCIIENCIPHER_H_
-#endif // !ASCII_HEADERS_ASCIIENCIPHER_H_
 
 std::string ASCIIEncipher::change(int n, int d)
 {
