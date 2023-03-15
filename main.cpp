@@ -1,35 +1,25 @@
 /*
-* ÎÄ¼şÃû£ºmain.cpp
-* ×÷Õß£ºÁõ×÷å«
+* æ–‡ä»¶åï¼šmain.cpp
+* ä½œè€…ï¼šåˆ˜ä½œç€š
 */
 
-#ifndef ASCII_STD_IOSTREAM_
 #include <iostream>
-#define ASCII_STD_IOSTREAM_
-#endif // !ASCII_STD_IOSTREAM_
-
-#ifndef ASCII_STD_CSTDLIB_
 #include <cstdlib>
-#define ASCII_STD_CSTDLIB_
-#endif // !ASCII_STD_CSTDLIB_
 
-#ifndef ASCII_HEADERS_ENCIPHER_H_
 #include "ASCIIEncipher.h"
-#define ASCII_HEADERS_ENCIPHER_H_
-#endif // !ASCII_HEADERS_ENCIPHER_H_
 
 int main()
 {
-	std::cout << "»¶Ó­½øÈëASCII¼ÓÃÜÏµÍ³\n";
-	std::cout << "¼ÓÃÜÇëÊäÈë1£¬½âÃÜÇëÊäÈë2£º";
+	std::cout << "æ¬¢è¿è¿›å…¥ASCIIåŠ å¯†ç³»ç»Ÿ\n";
+	std::cout << "åŠ å¯†è¯·è¾“å…¥1ï¼Œè§£å¯†è¯·è¾“å…¥2ï¼š";
 	int cmd;
 	std::cin >> cmd;
 	if (cmd == 1)
 	{
-		std::cout << "ÇëÊäÈëÒª¼ÓÃÜµÄ×Ö·û´®£º";
+		std::cout << "è¯·è¾“å…¥è¦åŠ å¯†çš„å­—ç¬¦ä¸²ï¼š";
 		std::string input;
 		std::cin >> input;
-		std::vector<std::string> ans = encipher(input);
+		std::vector<std::string> ans = ASCIIEncipher::encipher(input);
 		std::vector<std::string>::iterator it = ans.begin();
 		while (it != ans.end())
 		{
@@ -41,13 +31,13 @@ int main()
 	{
 		std::string input = "", ans = "";
 		char m = '\0';
-		std::cout << "ÇëÊäÈë£º";
+		std::cout << "è¯·è¾“å…¥ï¼š";
 		while (std::cin >> input)
 		{
-			std::cout << "ÇëÊäÈë£º";
+			std::cout << "è¯·è¾“å…¥ï¼š";
 			if (isalnum(input[0]))
 			{
-				m = decipher(input);
+				m = ASCIIEncipher::decipher(input);
 				ans.insert(ans.length(), 1, m);
 			}
 		}
@@ -55,7 +45,7 @@ int main()
 	}
 	else
 	{
-		std::cerr << "ÎŞĞ§µÄÃüÁî£¡\n";
+		std::cerr << "æ— æ•ˆçš„å‘½ä»¤ï¼\n";
 	}
 	system("pause");
 	return 0;

@@ -1,12 +1,11 @@
 /*
-* ÎÄ¼şÃû£ºASCIIEncipher.cpp
-* ×÷Õß£ºÁõ×÷å«
+* æ–‡ä»¶åï¼šASCIIEncipher.cpp
+* ä½œè€…ï¼šåˆ˜ä½œç€š
 */
 
-#ifndef ASCII_HEADERS_ASCIIENCIPHER_H_
+#include <sstream>
+
 #include "ASCIIEncipher.h"
-#define ASCII_HEADERS_ASCIIENCIPHER_H_
-#endif // !ASCII_HEADERS_ASCIIENCIPHER_H_
 
 std::string change(int n, int d)
 {
