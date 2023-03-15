@@ -12,9 +12,8 @@
 #include <string>
 #include <vector>
 
-class ASCIIEncipher
+namespace ASCIIEncipher
 {
-public:
 	/*
 	* @brief 将10进制数转换成d进制数
 	*
@@ -40,7 +39,6 @@ public:
 	* @return {char} - 解密后的字符
 	*/
 	char decipher(std::string str);
-private:
 	/*
 	* @brief 计算n的k次方并返回
 	*
